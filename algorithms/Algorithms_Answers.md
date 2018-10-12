@@ -24,7 +24,7 @@ c)  bunnyEars = function(bunnies) {
       return 2 + bunnyEars(bunnies-1) 
     }
 ```
-*O(1) + O(n) = [O(n)]*
+*[O(n)]*
 
 **Exercise II**
 I would take x = _n_/2 and drop an egg. If it breaks I would take x = (_n_/2)/2 and try it again. If it broke I would divide the floors by 2 again and so on until I reached a floor that the egg would not break. Once I reached a floor that the egg wouldn't break I would move to the floor above that is current_floor + previous(x) / 2 and start moving up. If the egg broke I would split floors back down and so on.
